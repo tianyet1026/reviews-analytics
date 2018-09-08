@@ -24,8 +24,9 @@ print('共有', len(new), '筆留言長度小於100')
 print(new[5])
 
 good =[]
+term = input('請輸入要篩選的字?')
 for d in data:
-	if 'good' in d:
+	if term in d:
 		good.append(d)
-print('共有',len(good),'筆留言提到good')
+print('共有',len(good),'筆留言提到',term)
 print(good[0])
