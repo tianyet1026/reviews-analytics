@@ -12,31 +12,31 @@ print(data[0])
 #num = input('請問您想要讀取第幾筆?')
 #num = int(num)
 #print(data[num-1])
-# sum_len = 0
-# for d in data:
-# 	sum_len += len(d)
+sum_len = 0
+for d in data:
+	sum_len += len(d)
 
-# print('平均每筆留言有',int(sum_len/len(data)),'字')
+print('平均每筆留言有',int(sum_len/len(data)),'字')
 
-# new =[]
-# for d in data:
-# 	if len(d) < 100:
-# 		new.append(d)
-# print('共有', len(new), '筆留言長度小於100') 
-# print(new[5])
+new =[]
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('共有', len(new), '筆留言長度小於100') 
+print(new[5])
 
-# #good =[]
-# #term = input('請輸入要篩選的字?')
-# #for d in data:
-# #	if term in d:
-# #		good.append(d)
-# #print('共有',len(good),'筆留言提到',term)
-# #print(good[0])
+#good =[]
+#term = input('請輸入要篩選的字?')
+#for d in data:
+#	if term in d:
+#		good.append(d)
+#print('共有',len(good),'筆留言提到',term)
+#print(good[0])
 
-# term = input('請輸入要篩選的字?')
-# good = [d for d in data if term in d] #速寫法
+term = input('請輸入要篩選的字?')
+good = [d for d in data if term in d] #速寫法
 
-# print('共有',len(good),'筆留言提到',term)
+print('共有',len(good),'筆留言提到',term)
 
 #計數程序
 wc = {} #word_count
